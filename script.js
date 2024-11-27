@@ -44,3 +44,8 @@ const studentClone = {...student};
 // Add a new property + log
 studentClone.gradYear = 2030;
 console.log(studentClone.gradYear);
+
+// merge 2 arrays
+
+const newCourses = [ ...student.courses, "CPAN 201", "CPAN 202", "CPAN 203"];
+console.log(newCourses);
