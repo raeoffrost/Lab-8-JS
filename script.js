@@ -37,3 +37,15 @@ const scores = [85, 92, 78, 90];
 let [scores0, scores1] = scores;
 // log to the console
 console.log(`Initial two scores: ${scores0}, ${scores1}`);
+
+// Part 4: The Spread Operator
+// Clone the student object
+const studentClone = {...student};
+// Add a new property + log
+studentClone.gradYear = 2030;
+console.log(studentClone.gradYear);
+
+// merge 2 arrays
+
+const newCourses = [ ...student.courses, "CPAN 201", "CPAN 202", "CPAN 203"];
+console.log(newCourses);
