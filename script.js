@@ -52,8 +52,15 @@ console.log(newCourses);
 
 // Part 5: Object Methods
 
+// method add a new course 
 student.addCourse = function(course){
     student.courses.push(course);
 }
-student.addCourse("CPAN 301")
-console.log(student.courses)
+student.addCourse("CPAN 301");
+console.log(student.courses);
+
+// method total number of courses
+student.courseLoad = function(){
+    return student.courses.length;
+}
+console.log(student.courseLoad());
