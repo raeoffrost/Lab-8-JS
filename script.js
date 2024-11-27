@@ -64,3 +64,12 @@ student.courseLoad = function(){
     return student.courses.length;
 }
 console.log(student.courseLoad());
+
+// Bonus Task
+
+// Use reduce to calculate the average score
+
+// add score values with reduce then divide by array length and round for readability
+const averageScore = Math.round(scores.reduce(
+    (scoreA, scoreB) => (scoreA + scoreB))/scores.length);
+console.log("Average Grade: " + averageScore + "%");
