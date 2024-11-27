@@ -27,3 +27,13 @@ const studentObj = JSON.parse(studentString);
 console.log(studentObj);
 //compare to original
 console.log(student);
+
+// Part 3: Using Destructuring Assignment
+// extract the name and courses from the student object
+const {name, courses} = student;
+// Create an array of scores
+const scores = [85, 92, 78, 90];
+// Destructure the first two scores
+let [scores0, scores1] = scores;
+// log to the console
+console.log(`Initial two scores: ${scores0}, ${scores1}`);
