@@ -37,3 +37,8 @@ const scores = [85, 92, 78, 90];
 let [scores0, scores1] = scores;
 // log to the console
 console.log(`Initial two scores: ${scores0}, ${scores1}`);
+
+// Part 4: The Spread Operator
+
+const studentClone = {...student};
+console.log(studentClone);
