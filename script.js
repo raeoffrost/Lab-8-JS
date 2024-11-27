@@ -21,3 +21,9 @@ student.basics();
 // Convert the student object into a JSON string + Log
 const studentString = JSON.stringify(student);
 console.log(studentString);
+
+// Convert the JSON string to obj + Log
+const studentObj = JSON.parse(studentString);
+console.log(studentObj);
+//compare to original
+console.log(student);
