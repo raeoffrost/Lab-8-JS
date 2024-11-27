@@ -16,3 +16,14 @@ console.log("Student name: " + student.name);
 console.log("Student age: " + student.age);
 student.basics();
 
+// Part 2: Working with JSON
+
+// Convert the student object into a JSON string + Log
+const studentString = JSON.stringify(student);
+console.log(studentString);
+
+// Convert the JSON string to obj + Log
+const studentObj = JSON.parse(studentString);
+console.log(studentObj);
+//compare to original
+console.log(student);
