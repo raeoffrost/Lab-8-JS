@@ -39,6 +39,8 @@ let [scores0, scores1] = scores;
 console.log(`Initial two scores: ${scores0}, ${scores1}`);
 
 // Part 4: The Spread Operator
-
+// Clone the student object
 const studentClone = {...student};
-console.log(studentClone);
+// Add a new property + log
+studentClone.gradYear = 2030;
+console.log(studentClone.gradYear);
